@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Necessary Cookie Demo</title>
+
+  <!-- Necessary cookies (session + security) -->
+  <script>
+    // Simulate a login/session cookie
+    document.cookie = "sessionID=abc123xyz; path=/; Secure; HttpOnly; SameSite=Strict";
+
+    // Simulate a CSRF protection cookie
+    document.cookie = "csrfToken=secureToken987; path=/; Secure; HttpOnly; SameSite=Strict";
+  </script>
+</head>
+<body>
+  <h1>Necessary Cookie Demo Page</h1>
+  <p>This page sets cookies that mimic authentication and security needs.</p>
+
+  <form>
+    <label>Username: <input type="text" name="username"></label><br>
+    <label>Password: <input type="password" name="password"></label><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <p><a href="https://www.seqrite.com/data-privacy">Powered by Seqrite</a></p>
+</body>
+</html>
